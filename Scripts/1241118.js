@@ -2,7 +2,7 @@
 // ham hien thi post, comment
 
 function getGroupWall(start,end) {
-    var graphQuery = '/241619362662034/?fields=feed';
+    var graphQuery = '/241619362662034/?fields=feed.limit(10000)';
     var authToken = "560878127334436|ZXAlCISJfs2YgbsqNkb2sMNbMT4";
     var url = graphQuery + '&access_token=' + authToken;
     
@@ -68,7 +68,7 @@ function getGroupWall(start,end) {
 
 function getcomment(a)
 {
-    var graphQuery = '/241619362662034/?fields=feed';
+    var graphQuery = '/241619362662034/?fields=feed.limit(10000)';
     //var authToken = FB.getAuthResponse()['accessToken'];
     var authToken = "560878127334436|ZXAlCISJfs2YgbsqNkb2sMNbMT4";
     var url = graphQuery + '&access_token=' + authToken;
